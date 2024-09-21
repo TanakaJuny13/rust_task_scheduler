@@ -1,0 +1,15 @@
+[package]
+name = "task_scheduler"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+uuid = {version = "1.10.0", features = ["v4"]}
+serde = {version = "1.0.206", features = ["derive"]}
+env_logger = "0.11.5"
+log = "0.4.22"
+dotenvy = "0.15.7"
+chrono = {version = "0.4.38", features = ["serde"]}
+sqlx = {version = "0.7", features = ["runtime-async-std", "tls-native-tls", "postgres","chrono"]}
+
